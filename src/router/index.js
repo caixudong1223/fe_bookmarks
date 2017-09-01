@@ -8,8 +8,11 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      component: resolve => require(['../components/Content.vue'], resolve)
+    },
+    {
+      path: '/ui-frameworks',
+      component: resolve => require(['../components/Content.vue'], resolve)
     }
   ]
 })

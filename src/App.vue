@@ -1,26 +1,39 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <div class="top_nav">
+      <div class="top_nav_content">
+        <HeaderNav/>
+      </div>      
+    </div>
+    <div class="content_area">
+      <div class="content_area_card">
+        <router-view></router-view>
+      </div>      
+    </div>
+    
+
+    <div class="footer_area">
+      <div class="footer_area_content">
+        <FooterInfo/>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// import {Input} from 'iView'
+import HeaderNav from './components/Header'
+import FooterInfo from '@/components/Footer'
 export default {
   name: 'app',
   components: {
-    // Input
+    HeaderNav,
+    FooterInfo
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+<style lang="less" scoped>
+  @import url('./assets/less/app.less');
 </style>
+
