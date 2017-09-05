@@ -2,7 +2,7 @@
     <div class="vue-content">
         <Row>
             <Col span="6">
-                <Menu :theme="theme3" active-name="1">
+                <Menu :theme="theme" active-name="1">
                     <MenuGroup title="内容管理">
                         <MenuItem name="1">
                             <Icon type="document-text"></Icon>
@@ -35,7 +35,7 @@
     export default {
         data() {
             return {
-
+                theme: 'primary'
             }
         }
     }
