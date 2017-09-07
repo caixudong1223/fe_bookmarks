@@ -17,6 +17,10 @@ export default new Router({
     {
       path: '/vue',
       component: resolve => require(['../components/vueContent.vue'], resolve)
+    },
+    {
+      path: '/hello',
+      component: resolve => require(['../components/Hello.vue'], resolve)
     }
   ]
 })
