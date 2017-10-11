@@ -34,7 +34,7 @@
                         <Col span="6">
                             <a href="https://doc.webpack-china.org/">webpack</a>
                         </Col>
-                    </Row>                    
+                    </Row>
                 </div>
             </Panel>
         </Collapse>

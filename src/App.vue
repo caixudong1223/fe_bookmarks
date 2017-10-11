@@ -3,14 +3,14 @@
     <div class="top_nav">
       <div class="top_nav_content">
         <HeaderNav/>
-      </div>      
+      </div>
     </div>
     <div class="content_area">
       <div class="content_area_card">
         <router-view></router-view>
-      </div>      
+      </div>
     </div>
-    
+
 
     <div class="footer_area">
       <div class="footer_area_content">

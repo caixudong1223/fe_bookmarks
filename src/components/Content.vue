@@ -21,6 +21,7 @@
     </div>
 </template>
 
+
 <script>
     import uidata from '../data/ui.json';
     import colors from '../data/colors.json'

@@ -12,15 +12,26 @@ export default new Router({
     },
     {
       path: '/ui',
+      name: 'ui',
       component: resolve => require(['../components/Content.vue'], resolve)
     },
     {
       path: '/vue',
-      component: resolve => require(['../components/vueContent.vue'], resolve)
+      name: 'vue',
+      component: resolve => require(['../components/VueFramework.vue'], resolve)
     },
     {
       path: '/hello',
+      name: 'hello',
       component: resolve => require(['../components/Hello.vue'], resolve)
+    },{
+      path: '/login',
+      name: 'login',
+      component: () => import('../pages/login.vue')
+    },{
+      path: '/vueDemos',
+      name: 'vueDemos',
+      component: () => import('../pages/VueDemoPrj.vue')
     }
   ]
 })
