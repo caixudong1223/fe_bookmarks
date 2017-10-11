@@ -17,17 +17,28 @@
         <FooterInfo/>
       </div>
     </div>
+
+    <div class="scrollToTop" @click="scrollToTop">
+      <Affix/>
+    </div>
   </div>
 </template>
 
 <script>
 import HeaderNav from './components/Header'
 import FooterInfo from '@/components/Footer'
+import Affix from '@/components/Affix'
 export default {
   name: 'app',
   components: {
     HeaderNav,
-    FooterInfo
+    FooterInfo,
+    Affix
+  },
+  methods: {
+    scrollToTop(){
+
+    }
   }
 }
 </script>

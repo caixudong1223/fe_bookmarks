@@ -2,7 +2,7 @@
 	<div class="vueDemos">
         <div class="demoList">
             <a :href="item.url" v-for="item in demoList" :key="item.index">
-                <Card class="cardBlock">
+                <Card style="width: 320px; min-height: 150px;float: left;">
                     <p slot="title">
                         <Icon type="flag"></Icon>
                         {{item.title}}
@@ -33,17 +33,17 @@
     }
 </script>
 
-<style type="less" scoped>
+<style lang="less" scoped>
 	.vueDemos{
         .demoList{
-            .cardBlock{
+           /*  .cardBlock{
                 width: 320px;
-                float: left;
+                float: left; */
                 .cardContent{
                     font-size: 12px;
                     text-align: center;
                 }
-            }
+            /* } */
         }
 	}
 </style>

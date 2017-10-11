@@ -32,6 +32,10 @@ export default new Router({
       path: '/vueDemos',
       name: 'vueDemos',
       component: () => import('../pages/VueDemoPrj.vue')
+    },{
+      path: '/authorConfig',
+      name: 'authorConfig',
+      component: () => import('../components/AuthorConfig.vue')
     }
   ]
 })
